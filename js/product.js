@@ -97,6 +97,7 @@ const app = Vue.createApp({
         this.selectProduct.data.imagesUrl = [];
       } else if (status == "edit") {
         this.selectProduct.data = { ...product };
+        this.isNew = false;
         productModal.show();
       } else if (status == "delete") {
         this.selectProduct.data = { ...product };
